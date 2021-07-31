@@ -9,7 +9,7 @@ const UsersList = ({ users }) => {
       <ul>
         {users.map((user, index) => {
           return (
-            <li>
+            <li key={index}>
               {user.name} ({user.age} years old)
             </li>
           );
